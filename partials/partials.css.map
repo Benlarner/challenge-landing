@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEMA,UAAU;EACN,WAAW,EAPJ,cAAc;EAQrB,GAAG,EAAE,kCAAkC;;;AAG3C,UAAU;EACN,WAAW,EAXH,mBAAmB;EAY3B,GAAG,EAAE,mCAAmC;;;AAG5C,UAAU;EACN,WAAW,EAfH,yBAAyB;EAgBjC,GAAG,EAAE,yCAAyC;;;AAGlD,UAAU;EACN,WAAW,EAnBF,eAAe;EAoBxB,GAAG,EAAE,+BAA+B;;;AAGxC,UAAU;EACN,WAAW,EAvBJ,aAAa;EAwBpB,GAAG,EAAE,6BAA6B",
+    "sources": [
+        "partials.scss",
+        "_mixins.scss",
+        "_typography.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "partials.css"
+}

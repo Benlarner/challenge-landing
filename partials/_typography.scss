@@ -1,0 +1,32 @@
+// Fonts
+
+$open-reg: "opensans-reg";
+$open-bold: "opensans-semibold";
+$open-ital: "opensans-semibolditalic";
+$rob-medium: "roboto-medium";
+$rob-bold: "roboto-bold";
+
+@font-face{
+    font-family: $open-reg;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: $open-bold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: $open-ital;
+    src: url(../fonts/OpenSans-SemiBoldItalic.ttf);
+}
+
+@font-face{
+    font-family: $rob-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face{
+    font-family: $rob-bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
