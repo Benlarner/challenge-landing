@@ -1,2 +1,148 @@
 @import './partials/partials.scss';
 
+body{
+    margin: unset;
+}
+
+
+// reset anchor tag decoration
+a{
+    text-decoration: none;
+    color: black;
+}
+
+// reset some button styling
+button{
+    text-decoration: unset;
+    border-style: unset;
+}
+
+img{
+    height: 50px;
+}
+
+
+// purple text color class
+.purple{
+    color: $purple;
+}
+
+// wrapper class
+
+.wrapper{
+    padding: 0 15rem;
+}
+
+// Header styles
+.head{
+    padding: 1rem 5rem;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo{
+        margin: unset;
+        border: solid 2px $purple;
+        padding: 5px 18px;
+        color: $purple;
+        font-family: $rob-bold;
+    }
+
+    &__nav{
+        font-family: $open-reg;
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+// Hero styles
+.hero{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    
+
+    &__container{
+        width: 37%;
+        margin-right: 2rem;
+    }
+
+    &__title{
+        font-family: $rob-medium;
+    }
+
+    &__sub{
+        font-family: $open-bold;
+        color: $silver;
+        margin-bottom: 1rem;
+    }
+
+    &__button{
+        background-color: $purple;
+        color: white;
+        padding: 13px 60px;
+        border-radius: 20px;
+    }
+    
+    &__image{
+        height: 280px;
+        width: auto;
+    }
+}
+
+// End of hero styling
+
+// Bio styles
+
+.bio{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: $light-blue;
+
+    &__image{
+        height: 300px;
+        width: 180px;
+        margin-right: 1.4rem;
+    }
+
+    &__bio{
+        width: 52%;
+    }
+
+    &__intro{
+        font-family: $rob-medium;
+        font-size: 20px;
+    }
+
+    &__light{
+        font-family: $open-reg;
+        color: $silver;
+        font-size: 13px;
+    }
+
+    &__italic{
+        font-size: 14.5px;
+        font-family: $open-ital;
+    }
+
+    &__learned{
+        font-size: 18px;
+    }
+}
+
+// end of bio styling
+
+// info styling
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+

@@ -22,4 +22,158 @@
   font-family: "roboto-bold";
   src: url(../fonts/Roboto-Bold.ttf);
 }
+
+body {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  text-decoration: unset;
+  border-style: unset;
+}
+
+img {
+  height: 50px;
+}
+
+.purple {
+  color: #2D25C8;
+}
+
+.wrapper {
+  padding: 0 15rem;
+}
+
+.head {
+  padding: 1rem 5rem;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head__logo {
+  margin: unset;
+  border: solid 2px #2D25C8;
+  padding: 5px 18px;
+  color: #2D25C8;
+  font-family: "roboto-bold";
+}
+
+.head__nav {
+  font-family: "opensans-reg";
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+.hero__container {
+  width: 37%;
+  margin-right: 2rem;
+}
+
+.hero__title {
+  font-family: "roboto-medium";
+}
+
+.hero__sub {
+  font-family: "opensans-semibold";
+  color: #b1b1b1;
+  margin-bottom: 1rem;
+}
+
+.hero__button {
+  background-color: #2D25C8;
+  color: white;
+  padding: 13px 60px;
+  border-radius: 20px;
+}
+
+.hero__image {
+  height: 280px;
+  width: auto;
+}
+
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  background-color: #F3F6F9;
+}
+
+.bio__image {
+  height: 300px;
+  width: 180px;
+  margin-right: 1.4rem;
+}
+
+.bio__bio {
+  width: 52%;
+}
+
+.bio__intro {
+  font-family: "roboto-medium";
+  font-size: 20px;
+}
+
+.bio__light {
+  font-family: "opensans-reg";
+  color: #b1b1b1;
+  font-size: 13px;
+}
+
+.bio__italic {
+  font-size: 14.5px;
+  font-family: "opensans-semibolditalic";
+}
+
+.bio__learned {
+  font-size: 18px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
 /*# sourceMappingURL=styles.css.map */
