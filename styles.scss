@@ -389,9 +389,6 @@ img{
         align-items: center;
     }
 
-    &__profile{
-
-    }
 
     &__name{
         margin-bottom: unset;
@@ -532,10 +529,14 @@ img{
     }
 
     &__container{
-        width: 90%;
+        width: 52%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile{
+            width: 90%;
+        }
     }
 
     &__copyright{
@@ -550,6 +551,10 @@ img{
         justify-content: flex-end;
         justify-content: space-around;
         width: 18%;
+
+        @include mobile{
+            width: 30%;
+        }
     }
 
     &__icon{

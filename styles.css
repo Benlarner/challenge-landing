@@ -711,7 +711,7 @@ img {
 }
 
 .footer__container {
-  width: 90%;
+  width: 52%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,6 +721,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__container {
+    width: 90%;
+  }
 }
 
 .footer__copyright {
@@ -740,6 +746,12 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 18%;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__icons {
+    width: 30%;
+  }
 }
 
 .footer__icon {
