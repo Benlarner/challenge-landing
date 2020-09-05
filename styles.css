@@ -310,7 +310,7 @@ img {
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  background-color: black;
+  background-color: #F3F6F9;
 }
 
 .projects {
@@ -370,5 +370,102 @@ img {
 .projects__image {
   height: 13px;
   margin: 0 2px;
+}
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.footer__experience {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  padding: 1.2rem;
+  color: #FFFFFF;
+  background-color: #2D25C8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__jenny {
+  font-size: 1rem;
+  width: 50%;
+  font-family: "roboto-medium";
+}
+
+.footer__button {
+  font-family: "roboto-bold";
+  background-color: #FFFFFF;
+  color: #2D25C8;
+  width: 25%;
+  height: 40px;
+  border-radius: 70px;
+}
+
+.footer__social {
+  background-color: #F3F6F9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__container {
+  width: 53%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copyright {
+  width: 50%;
+  font-family: "opensans-reg";
+  color: #b1b1b1;
+  font-size: 10px;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 18%;
+}
+
+.footer__icon {
+  height: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
