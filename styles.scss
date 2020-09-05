@@ -30,7 +30,7 @@ img{
 // wrapper class
 
 .wrapper{
-    padding: 0 15rem;
+    padding: 0 10.5rem;
 }
 
 // Header styles
@@ -110,7 +110,7 @@ img{
     }
 
     &__bio{
-        width: 52%;
+        width: 62%;
     }
 
     &__intro{
@@ -144,5 +144,165 @@ img{
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &__heading{
+        font-family: $rob-medium;
+        margin: unset;
+        margin-bottom: 0.3rem;
+    }
+
+    &__for{
+        margin-top: unset;
+        font-family: $rob-medium;
+        color: grey;
+        font-size: 19px;
+        margin-bottom: 2rem;
+    }
+
+    &__services{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__service{
+        width: 24%;
+    }
+
+    &__title{
+        font-family: $rob-medium;
+        font-size: 15px;
+    }
+
+    &__descrip{
+        font-family: $open-reg;
+        color: $silver;
+        font-size: 12px;
+    }
+}
+
+// end of service styling
+
+// Testimonial styling
+
+.testim{
+    background-color: $purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    &__heading{
+        font-family: $rob-medium;
+        color: $white;
+        margin-bottom: 2rem;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box{
+        display: flex;
+        background-color: $white;
+        width: 45%;
+        padding: 1rem;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    &__speech{
+        height: 30px ;
+        margin-right: 0.7rem;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    &__content{
+        padding: 0.6rem;
+    }
+
+    &__testim{
+        font-family: $open-ital;
+        color: rgb(150, 150, 150);
+        font-size: 14.8px;
+    }
+
+    &__person{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__profile{
+
+    }
+
+    &__name{
+        margin-bottom: unset;
+        font-size: 1rem;
+        font-family: $rob-medium;
+    }
+
+    &__prof{
+        margin-top: unset;
+        font-family: $open-reg;
+        color: $silver;
+        font-size: 10px;
+    }
+
+    &__image{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: black;
+    }
+}
+
+// end of testimonial styles
+
+// Start of projects styling
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__heading{
+        font-family: $rob-medium;
+        margin-bottom: 0.6rem;
+        padding-left: 2rem;
+    }
+
+    &__icons{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    &__icon{
+        padding: 1.8rem 3rem;
+        height: 50px;
+    }
+
+    &__check{
+        display: flex;
+        align-items: center;
+        font-family: $open-reg;
+        color: rgb(150, 150, 150);
+        font-size: 10px;
+    }
+
+    &__image{
+        height: 13px;
+        margin: 0 2px;
+    }
 }
 
