@@ -19,6 +19,10 @@ button{
 
 img{
     height: 50px;
+
+    @include mobile{
+        // display: none !important;
+    }
 }
 
 
@@ -31,6 +35,14 @@ img{
 
 .wrapper{
     padding: 0 10.5rem;
+
+    @include tablet{
+        padding: 0 5rem;
+    }
+
+    @include mobile{
+        padding: 0 2rem;
+    }
 }
 
 // Header styles
@@ -39,6 +51,15 @@ img{
     background-color: $white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @include tablet{
+        padding: 1rem 2rem;
+    }
+
+    @include mobile{
+        padding: 0.4rem 0.8rem;
+    }
 
     &__logo{
         margin: unset;
@@ -46,6 +67,11 @@ img{
         padding: 5px 18px;
         color: $purple;
         font-family: $rob-bold;
+
+        @include mobile{
+            font-size: 12px;
+        }
+
     }
 
     &__nav{
@@ -53,6 +79,20 @@ img{
         width: 30%;
         display: flex;
         justify-content: space-around;
+
+        @include tablet{
+            width: 50%;
+        }
+
+        @include mobile{
+            width: 70%;
+        }
+    }
+
+    &__link{
+        @include mobile{
+            font-size: 10px;
+        }
     }
 }
 
@@ -63,21 +103,37 @@ img{
     justify-content: center;
     align-items: center;
     height: 50vh;
+    @include mobile{
+        background-image: linear-gradient(rgba(#323232, 0.3),rgba(#323232, 0.3)),url(./assets/background.png);
+        background-size: cover;
+    }
     
 
     &__container{
         width: 37%;
         margin-right: 2rem;
+
+        @include mobile{
+            width: 80%;
+            margin: unset;
+        }
     }
 
     &__title{
         font-family: $rob-medium;
+        @include mobile{
+            color: $white;
+        }
     }
 
     &__sub{
         font-family: $open-bold;
         color: $silver;
         margin-bottom: 1rem;
+
+        @include mobile{
+            color: $light-blue;
+        }
     }
 
     &__button{
@@ -90,6 +146,10 @@ img{
     &__image{
         height: 280px;
         width: auto;
+
+        @include mobile{
+            display: none;
+        }
     }
 }
 
@@ -107,30 +167,71 @@ img{
         height: 300px;
         width: 180px;
         margin-right: 1.4rem;
+
+        @include mobile{
+           display: none;
+        }
+    }
+
+    &__mobile{
+        @include mobile{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__ben{
+        display: none;
+
+        @include mobile{
+            display: unset;
+            height: 70px;
+            border-radius: 100%;
+        }
     }
 
     &__bio{
         width: 62%;
+
+        @include mobile{
+            width: 80%;
+        }
     }
 
     &__intro{
         font-family: $rob-medium;
         font-size: 20px;
+
+        @include tablet{
+            font-size: 16px;
+        }
     }
 
     &__light{
         font-family: $open-reg;
         color: $silver;
         font-size: 13px;
+
+        @include tablet{
+            font-size: 10px;
+        }
     }
 
     &__italic{
         font-size: 14.5px;
         font-family: $open-ital;
+
+        @include tablet{
+            font-size: 12px;
+        }
     }
 
     &__learned{
         font-size: 18px;
+
+        @include tablet{
+            font-size: 15px;
+        }
     }
 }
 
@@ -150,34 +251,68 @@ img{
         font-family: $rob-medium;
         margin: unset;
         margin-bottom: 0.3rem;
+        text-align: center;
+
+        @include tablet{
+            font-size: 1.3rem;
+        }
+
+        @include mobile{
+            font-size: 0.825rem;
+        }
     }
 
     &__for{
         margin-top: unset;
         font-family: $rob-medium;
         color: grey;
-        font-size: 19px;
+        font-size: 1rem;
         margin-bottom: 2rem;
+
+        @include mobile{
+            font-size: 0.7rem
+        }
     }
 
     &__services{
         display: flex;
         justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+        }
     }
 
     &__service{
         width: 24%;
+
+        @include mobile{
+            border: solid 2px $light-blue;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
     }
 
     &__title{
         font-family: $rob-medium;
         font-size: 15px;
+        @include tablet{
+            font-size: 13px;
+        }
     }
 
     &__descrip{
         font-family: $open-reg;
         color: $silver;
         font-size: 12px;
+        @include tablet{
+            font-size: 10px;
+        }
     }
 }
 
@@ -204,15 +339,22 @@ img{
     &__container{
         display: flex;
         justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+        }
     }
 
     &__box{
         display: flex;
         background-color: $white;
-        width: 45%;
+        width: 40%;
         padding: 1rem;
         justify-content: space-between;
         margin-bottom: 2rem;
+
+        @include mobile{
+            width: 90%;
+        }
     }
 
     &__speech{
@@ -220,6 +362,10 @@ img{
         margin-right: 0.7rem;
         padding-top: 0.5rem;
         padding-left: 0.5rem;
+
+        @include tablet{
+            height: 20px;
+        }
     }
 
     &__content{
@@ -230,6 +376,11 @@ img{
         font-family: $open-ital;
         color: rgb(150, 150, 150);
         font-size: 14.8px;
+
+        @include tablet{
+            font-size: 11.5px;
+            margin-bottom: 1rem;
+        }
     }
 
     &__person{
@@ -246,6 +397,10 @@ img{
         margin-bottom: unset;
         font-size: 1rem;
         font-family: $rob-medium;
+
+        @include tablet{
+            font-size: 0.7rem;
+        }
     }
 
     &__prof{
@@ -289,7 +444,7 @@ img{
 
     &__icon{
         padding: 1.8rem 3rem;
-        height: 50px;
+        height: 40px;
     }
 
     &__check{
@@ -326,12 +481,29 @@ img{
         display: flex;
         border-radius: 8px;
         align-items: center;
+
+        @include tablet{
+            padding: 0.8rem;
+        }
+
+        @include mobile{
+            width: 80%;
+            flex-direction: column;
+        }
     }
 
     &__jenny{
         font-size: 1rem;
         width: 50%;
         font-family: $rob-medium;
+
+        @include tablet{
+            font-size: 0.8rem;
+        }
+        
+        @include mobile{
+            width: 80%;
+        }
     }
 
     &__button{
@@ -341,6 +513,14 @@ img{
         width: 25%;
         height: 40px;
         border-radius: 70px;
+
+        @include tablet{
+            height: 28px;
+        }
+
+        @include mobile{
+            width: 60%;
+        }
     }
 
     &__social{
@@ -352,7 +532,7 @@ img{
     }
 
     &__container{
-        width: 53%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;

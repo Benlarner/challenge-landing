@@ -49,6 +49,18 @@ img {
   padding: 0 10.5rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
+}
+
 .head {
   padding: 1rem 5rem;
   background-color: #FFFFFF;
@@ -58,6 +70,21 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .head {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .head {
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 .head__logo {
@@ -68,6 +95,12 @@ img {
   font-family: "roboto-bold";
 }
 
+@media only screen and (max-width: 768px) {
+  .head__logo {
+    font-size: 12px;
+  }
+}
+
 .head__nav {
   font-family: "opensans-reg";
   width: 30%;
@@ -76,6 +109,24 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media only screen and (max-width: 1200px) {
+  .head__nav {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .head__nav {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .head__link {
+    font-size: 10px;
+  }
 }
 
 .hero {
@@ -92,19 +143,46 @@ img {
   height: 50vh;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.3)), to(rgba(50, 50, 50, 0.3))), url(./assets/background.png);
+    background-image: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3)), url(./assets/background.png);
+    background-size: cover;
+  }
+}
+
 .hero__container {
   width: 37%;
   margin-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__container {
+    width: 80%;
+    margin: unset;
+  }
 }
 
 .hero__title {
   font-family: "roboto-medium";
 }
 
+@media only screen and (max-width: 768px) {
+  .hero__title {
+    color: #FFFFFF;
+  }
+}
+
 .hero__sub {
   font-family: "opensans-semibold";
   color: #b1b1b1;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__sub {
+    color: #F3F6F9;
+  }
 }
 
 .hero__button {
@@ -117,6 +195,12 @@ img {
 .hero__image {
   height: 280px;
   width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__image {
+    display: none;
+  }
 }
 
 .bio {
@@ -136,13 +220,54 @@ img {
   margin-right: 1.4rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .bio__image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bio__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.bio__ben {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .bio__ben {
+    display: unset;
+    height: 70px;
+    border-radius: 100%;
+  }
+}
+
 .bio__bio {
   width: 62%;
+}
+
+@media only screen and (max-width: 768px) {
+  .bio__bio {
+    width: 80%;
+  }
 }
 
 .bio__intro {
   font-family: "roboto-medium";
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bio__intro {
+    font-size: 16px;
+  }
 }
 
 .bio__light {
@@ -151,13 +276,31 @@ img {
   font-size: 13px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .bio__light {
+    font-size: 10px;
+  }
+}
+
 .bio__italic {
   font-size: 14.5px;
   font-family: "opensans-semibolditalic";
 }
 
+@media only screen and (max-width: 1200px) {
+  .bio__italic {
+    font-size: 12px;
+  }
+}
+
 .bio__learned {
   font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bio__learned {
+    font-size: 15px;
+  }
 }
 
 .info {
@@ -182,14 +325,33 @@ img {
   font-family: "roboto-medium";
   margin: unset;
   margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .info__heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info__heading {
+    font-size: 0.825rem;
+  }
 }
 
 .info__for {
   margin-top: unset;
   font-family: "roboto-medium";
   color: grey;
-  font-size: 19px;
+  font-size: 1rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .info__for {
+    font-size: 0.7rem;
+  }
 }
 
 .info__services {
@@ -201,8 +363,37 @@ img {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px) {
+  .info__services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .info__service {
   width: 24%;
+}
+
+@media only screen and (max-width: 768px) {
+  .info__service {
+    border: solid 2px #F3F6F9;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .info__title {
@@ -210,10 +401,22 @@ img {
   font-size: 15px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .info__title {
+    font-size: 13px;
+  }
+}
+
 .info__descrip {
   font-family: "opensans-reg";
   color: #b1b1b1;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .info__descrip {
+    font-size: 10px;
+  }
 }
 
 .testim {
@@ -251,12 +454,21 @@ img {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px) {
+  .testim__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .testim__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #FFFFFF;
-  width: 45%;
+  width: 40%;
   padding: 1rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -264,11 +476,23 @@ img {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .testim__box {
+    width: 90%;
+  }
+}
+
 .testim__speech {
   height: 30px;
   margin-right: 0.7rem;
   padding-top: 0.5rem;
   padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .testim__speech {
+    height: 20px;
+  }
 }
 
 .testim__content {
@@ -279,6 +503,13 @@ img {
   font-family: "opensans-semibolditalic";
   color: #969696;
   font-size: 14.8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .testim__testim {
+    font-size: 11.5px;
+    margin-bottom: 1rem;
+  }
 }
 
 .testim__person {
@@ -297,6 +528,12 @@ img {
   margin-bottom: unset;
   font-size: 1rem;
   font-family: "roboto-medium";
+}
+
+@media only screen and (max-width: 1200px) {
+  .testim__name {
+    font-size: 0.7rem;
+  }
 }
 
 .testim__prof {
@@ -352,7 +589,7 @@ img {
 
 .projects__icon {
   padding: 1.8rem 3rem;
-  height: 50px;
+  height: 40px;
 }
 
 .projects__check {
@@ -404,10 +641,38 @@ img {
           align-items: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .footer__experience {
+    padding: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__experience {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer__jenny {
   font-size: 1rem;
   width: 50%;
   font-family: "roboto-medium";
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__jenny {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__jenny {
+    width: 80%;
+  }
 }
 
 .footer__button {
@@ -417,6 +682,18 @@ img {
   width: 25%;
   height: 40px;
   border-radius: 70px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__button {
+    height: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__button {
+    width: 60%;
+  }
 }
 
 .footer__social {
@@ -434,7 +711,7 @@ img {
 }
 
 .footer__container {
-  width: 53%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
