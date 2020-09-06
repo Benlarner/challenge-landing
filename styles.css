@@ -29,6 +29,7 @@ body {
 }
 
 #modal {
+  border-radius: 10px;
   display: none;
   height: 54vh;
   width: 40%;
@@ -45,7 +46,8 @@ body {
           align-items: center;
   left: 30%;
   bottom: 10%;
-  background-color: #FFFFFF;
+  background-color: #2D25C8;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -63,10 +65,11 @@ body {
 }
 
 #escape {
+  height: 50px;
   width: 50px;
-  background-color: #2D25C8;
+  background-color: #FFFFFF;
   border-radius: 100%;
-  color: #FFFFFF;
+  color: #2D25C8;
   height: 50%;
 }
 
@@ -95,7 +98,7 @@ body {
 
 .contact__sub {
   font-family: "roboto-medium";
-  color: #b1b1b1;
+  color: #FFFFFF;
 }
 
 .contact__submit {
@@ -127,6 +130,12 @@ body {
   background-color: #F3F6F9;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact__details {
+    width: 80%;
+  }
+}
+
 .contact__text {
   background-color: #F3F6F9;
   height: 30%;
@@ -134,13 +143,27 @@ body {
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact__text {
+    width: 80%;
+  }
+}
+
 .contact__button {
   width: 100%;
   padding: 0.6rem;
   margin-bottom: 1rem;
   border-radius: 20px;
-  background-color: #2D25C8;
-  color: #FFFFFF;
+  background-color: #F3F6F9;
+  color: #2D25C8;
+  font-family: "opensans-semibold";
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact__button {
+    width: 80%;
+  }
 }
 
 a {
