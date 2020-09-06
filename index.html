@@ -6,7 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body id = dark>
+    <div id = "modal" class = "contact">
+        <div class = "contact__top">
+            <h2 class = "contact__sub">Get in Touch</h2>
+            <button id = "escape">X</button>
+        </div>
+        <div class = "contact__submit">
+            <form class = "contact__form" action="https://formspree.io/mzbjqdvq" id="usrform" method="post">
+              <input class = "contact__details" type="text" name = "name" placeholder="Full Name">
+              <input class = "contact__details" type="text" name = "_replyto" placeholder="Email Address">
+              <textarea class = "contact__text"  name="message" id="usrform" cols="34" rows="12" placeholder="Get in touch!"></textarea>
+              <button class = "contact__button" type="submit">send message</button>
+            </form>    
+        </div>
+      </div>
+    </div>
     <header class = "head">
         <p class = "head__logo">Simon</p>
         <nav class = "head__nav">
@@ -118,7 +133,7 @@
         <footer class = "footer">
             <div class = "footer__experience">
                 <p class = "footer__jenny">Forget Benjamin Experience, Wanna Jenny's experience?</p>
-                <button class = "footer__button">Hit Us Now</button>
+                <button class = "footer__button" id = "modal-button">Hit Us Now</button>
             </div>
             <div class = "footer__social">
                 <div class = "footer__container">
@@ -131,6 +146,7 @@
                     </div>
                 </div>
             </div>
+            <div class = "grey"></div>
         </footer>
     </main>
     <script src="./script.js"></script>

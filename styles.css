@@ -25,6 +25,122 @@
 
 body {
   margin: unset;
+  position: relative;
+}
+
+#modal {
+  display: none;
+  height: 54vh;
+  width: 40%;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 30%;
+  bottom: 10%;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200px) {
+  #modal {
+    width: 60%;
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #modal {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+#escape {
+  width: 50px;
+  background-color: #2D25C8;
+  border-radius: 100%;
+  color: #FFFFFF;
+  height: 50%;
+}
+
+.contact {
+  border: 2px solid #F3F6F9;
+}
+
+.contact__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact__top {
+    width: 80%;
+  }
+}
+
+.contact__sub {
+  font-family: "roboto-medium";
+  color: #b1b1b1;
+}
+
+.contact__submit {
+  height: 100%;
+}
+
+.contact__form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__details {
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: 97%;
+  height: 10%;
+  background-color: #F3F6F9;
+}
+
+.contact__text {
+  background-color: #F3F6F9;
+  height: 30%;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.contact__button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  background-color: #2D25C8;
+  color: #FFFFFF;
 }
 
 a {
@@ -569,7 +685,6 @@ img {
 .projects__heading {
   font-family: "roboto-medium";
   margin-bottom: 0.6rem;
-  padding-left: 2rem;
 }
 
 .projects__icons {
@@ -589,7 +704,8 @@ img {
 
 .projects__icon {
   padding: 1.8rem 3rem;
-  height: 40px;
+  height: auto;
+  max-width: 50px;
 }
 
 .projects__check {
@@ -697,7 +813,6 @@ img {
 }
 
 .footer__social {
-  background-color: #F3F6F9;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,6 +823,27 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer .grey {
+  background-color: #F3F6F9;
+  height: 89px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer .grey {
+    height: 78px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .grey {
+    height: 105px;
+  }
 }
 
 .footer__container {
